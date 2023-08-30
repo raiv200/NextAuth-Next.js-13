@@ -17,7 +17,7 @@ export default function Card({ user, pagetype }: Props) {
 
     const greeting = user?.name ? (
         <div className="flex flex-col items-center p-6 bg-white rounded-lg font-bold text-5xl text-black">
-            Hello {user?.name} from {pagetype} component!
+            Hello {user?.name} !
         </div>
     ) : null
 
@@ -43,7 +43,7 @@ export default function Card({ user, pagetype }: Props) {
             {greeting}
             {emailDisplay}
             {userImage}
-            <p className="text-2xl text-center">{pagetype} Page!</p>
+            <p className="text-2xl text-white text-center">{pagetype} Page!</p>
         </section>
     )
 }
